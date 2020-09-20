@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinAppsContato.MainPage">
+
+    <StackLayout>
+        <Label Text="App Xamarin para Contatos" 
+           HorizontalOptions="Center"
+           FontSize="Large" />
+
+        <Label Text="EMAIL" 
+           HorizontalOptions="Center" />
+
+        <BoxView VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 HeightRequest="1"
+                 WidthRequest="150"  
+                 Color="gray" />
+
+        <Entry x:Name="EntDestinatario" 
+               Placeholder="Informe o e-mail do Destinatário: " 
+               Keyboard="Email"/>
+
+        <Entry x:Name="EntAssunto"      
+               Placeholder="Informe o Assunto: " />
+
+        <Editor x:Name="EdtMensagem"     
+               Placeholder="Informe a sua mensagem aqui" 
+               AutoSize="TextChanges"/>
+
+        <Button Clicked="BtnEnviar_Clicked"
+                Text="Abrir aplicativo de E-mail"/>
+
+        <Label Text="TELEFONE" 
+           HorizontalOptions="Center" />
+
+        <BoxView VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 HeightRequest="1"
+                 WidthRequest="150"  
+                 Color="gray" />
+
+        <Entry x:Name="EntTelefone" 
+               Placeholder="Informe o Telefone para contato: " 
+               Keyboard="Numeric"/>
+
+        <Button Clicked="BtnLigar_Clicked" 
+                Text="Abrir aplicativo de Telefone"
+                BackgroundColor="Black"
+                TextColor="White"/>
+
+        <Button Clicked="BtnAbrirAppWhats_Clicked" 
+                Text="Abrir Chat WhatsApp"
+                BackgroundColor="Green"
+                TextColor="White"/>
+
+        <Button Clicked="BtnAbrirAppInsta_Clicked" 
+                Text="Abrir Chat Instagram"
+                BackgroundColor="Purple"
+                TextColor="White"/>
+
+    </StackLayout>
+
+</ContentPage>
